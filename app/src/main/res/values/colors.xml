@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Added for Pantalla de Inicio -->
+    <color name="inicio_background">#B8E8E6</color>
+    <color name="inicio_text_color">#263238</color>
+    <color name="inicio_button_color">#EBDD97</color>
+    <color name="inicio_button_stroke">#5D4037</color>
+    
+    <!-- Added for Login Screen -->
+    <color name="login_header_background">#EBDD97</color>
+    <color name="login_background">#B8E8E6</color>
+    <color name="login_text_title">#4E342E</color>
+    <color name="login_button_secondary">#E6C29F</color>
+    <color name="login_input_bg">#FFFFFF</color>
+</resources>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">ProyectoG5App</string>
+    
+    <!-- Strings for Pantalla de Inicio -->
+    <string name="app_title_flag">Flag</string>
+    <string name="app_title_raphy">raphy</string>
+    <string name="inicio_subtitle">¡PON A PRUEBA TU\nCONOCIMIENTO SOBRE EL\nMUNDO!</string>
+    <string name="inicio_button_jugar">Jugar</string>
+
+    <!-- Strings for Pantalla Login -->
+    <string name="login_subtitle_1">Explora continentes, descubre países y datos curiosos.</string>
+    <string name="login_subtitle_2">¡Demuestra qué tan bien conoces el mundo... bandera por bandera!</string>
+    <string name="login_title">INICIAR SESIÓN</string>
+    <string name="login_username_label">Nombre de usuario</string>
+    <string name="login_password_label">Contraseña</string>
+    <string name="login_btn_continue">Continuar</string>
+    <string name="login_btn_register">Registrarse</string>
+    
+    <!-- Strings for Pantalla Registro -->
+    <string name="register_title">REGISTRARSE</string>
+    <string name="register_username_label">Introduzca su nombre de usuario</string>
+    <string name="register_password_label">Introduzca una contraseña</string>
+    <string name="register_btn_save">Guardar</string>
+    <string name="register_btn_back">Regresar</string>
+
+    <!-- Strings for Pantalla Bienvenida -->
+    <string name="welcome_greeting">Bienvenido</string>
+    <string name="welcome_player_name_placeholder">Nombre del jugador</string>
+    <string name="welcome_btn_new_game">Nueva Partida</string>
+    <string name="welcome_btn_settings">Configuraciones</string>
+    <string name="welcome_footer_text">Elige los filtros de colores que más\nte gusten y más</string>
+
+    <!-- Strings for Pantalla Elegir Continente -->
+    <string name="continent_north_america">Norteamérica</string>
+    <string name="continent_central_america">Centroamérica</string>
+    <string name="continent_south_america">Sudamérica</string>
+    <string name="continent_europe">Europa</string>
+    <string name="continent_asia">Asia</string>
+    <string name="continent_oceania">Oceanía</string>
+    <string name="continent_africa">África</string>
+    <string name="btn_back">Regresar</string>
+    
+    <!-- Strings for Pantalla Juego/Sudamerica -->
+    <string name="game_progress">0%</string>
+    <string name="country_chile">Chile</string>
+    <string name="country_surinam">Surinam</string>
+    <string name="country_argentina">Argentina</string>
+</resources>

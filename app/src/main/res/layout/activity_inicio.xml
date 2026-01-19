@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inicio_background"
+    tools:context=".InicioActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="225dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="Logo Flagraphy"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/inicio_subtitle"
+        android:textColor="@color/inicio_text_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <ImageView
+        android:id="@+id/ivMundo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="Mapa del mundo"
+        android:src="@drawable/mundo_pantalla_inicio"
+        app:layout_constraintBottom_toTopOf="@+id/ivGlobo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtitle" />
+
+    <ImageView
+        android:id="@+id/ivGlobo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Globo terráqueo animado"
+        android:src="@drawable/globo_pantalla_inicio"
+        app:layout_constraintBottom_toTopOf="@+id/btnJugar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnJugar"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button_jugar_bg"
+        android:drawableEnd="@drawable/ic_play_circle"
+        android:drawableTint="@color/inicio_button_stroke"
+        android:paddingStart="48dp"
+        android:paddingEnd="24dp"
+        android:text="@string/inicio_button_jugar"
+        android:textAllCaps="false"
+        android:textColor="@color/inicio_button_stroke"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

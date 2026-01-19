@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inicio_background"
+    tools:context=".GameSudamericaActivity">
+
+    <!-- Header/Logo -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Logo Flagraphy"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Top Controls -->
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_secondary_bg"
+        android:contentDescription="Cerrar"
+        android:src="@drawable/ic_close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <ImageButton
+        android:id="@+id/btnRefresh"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_jugar_bg"
+        android:contentDescription="Reiniciar"
+        android:src="@drawable/ic_refresh"
+        app:layout_constraintStart_toEndOf="@+id/btnClose"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/inicio_button_color" 
+        android:gravity="center"
+        android:text="0%"
+        android:textColor="@color/inicio_text_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <!-- Map Area -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMap"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/layoutFlags"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClose">
+
+        <ImageView
+            android:id="@+id/ivMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:src="@drawable/suademerica" 
+            android:scaleType="fitCenter" 
+            android:contentDescription="Mapa de Sudamérica" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Flags Carousel -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutFlags"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/edittext_bg" 
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <HorizontalScrollView
+            android:id="@+id/svFlags"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Chile -->
+                <LinearLayout
+                    android:id="@+id/flagItem1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/chile"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chile"
+                        android:textColor="@color/inicio_text_color"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <!-- Ecuador -->
+                <LinearLayout
+                    android:id="@+id/flagItem2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ecuador" 
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ecuador"
+                        android:textColor="@color/inicio_text_color"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+                
+                <!-- Argentina -->
+                <LinearLayout
+                    android:id="@+id/flagItem3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/argentina"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Argentina"
+                        android:textColor="@color/inicio_text_color"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <!-- Colombia -->
+                <LinearLayout
+                    android:id="@+id/flagItem4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/colombia"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Colombia"
+                        android:textColor="@color/inicio_text_color"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <!-- Bolivia -->
+                <LinearLayout
+                    android:id="@+id/flagItem5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/bolivia"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bolivia"
+                        android:textColor="@color/inicio_text_color"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <!-- Peru -->
+                <LinearLayout
+                    android:id="@+id/flagItem6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/peru"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perú"
+                        android:textColor="@color/inicio_text_color"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/inicio_background"
+    tools:context=".ElegirContinenteActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Logo Flagraphy"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Row 1: Norteamérica, Centroamérica -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNorthAmerica"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_jugar_bg"
+        android:text="@string/continent_north_america"
+        android:textAllCaps="false"
+        android:textColor="@color/inicio_button_stroke"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnCentralAmerica"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCentralAmerica"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/button_jugar_bg"
+        android:text="@string/continent_central_america"
+        android:textAllCaps="false"
+        android:textColor="@color/inicio_button_stroke"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnNorthAmerica"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <!-- Row 2: Sudamérica -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSouthAmerica"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_secondary_bg"
+        android:text="@string/continent_south_america"
+        android:textAllCaps="false"
+        android:textColor="@color/inicio_button_stroke"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNorthAmerica" />
+
+    <!-- Row 3: Europa -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEurope"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_secondary_bg"
+        android:text="@string/continent_europe"
+        android:textAllCaps="false"
+        android:textColor="@color/inicio_button_stroke"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSouthAmerica" />
+
+    <!-- Row 4: Asia -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAsia"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_secondary_bg"
+        android:text="@string/continent_asia"
+        android:textAllCaps="false"
+        android:textColor="@color/inicio_button_stroke"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEurope" />
+
+    <!-- Row 5: Oceanía, África -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOceania"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_jugar_bg"
+        android:text="@string/continent_oceania"
+        android:textAllCaps="false"
+        android:textColor="@color/inicio_button_stroke"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnAfrica"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAsia" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAfrica"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/button_jugar_bg"
+        android:text="@string/continent_africa"
+        android:textAllCaps="false"
+        android:textColor="@color/inicio_button_stroke"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnOceania"
+        app:layout_constraintTop_toBottomOf="@+id/btnAsia" />
+
+    <!-- Decorations -->
+
+    <!-- Regresar Button -->
+    <!-- Placed after ivNube to be on top -->
+
+    <ImageView
+        android:id="@+id/ivNube"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:contentDescription="Nubes de fondo"
+        android:scaleType="fitXY"
+        android:src="@drawable/nube"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBack"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/button_jugar_bg"
+        android:drawableEnd="@drawable/ic_double_arrow_left"
+        android:drawableTint="@color/inicio_button_stroke"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/btn_back"
+        android:textAllCaps="false"
+        android:textColor="@color/inicio_button_stroke"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

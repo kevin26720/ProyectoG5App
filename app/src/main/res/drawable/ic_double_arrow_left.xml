@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="@color/inicio_button_stroke">
+  <path
+      android:fillColor="@color/inicio_button_stroke"
+      android:pathData="M18.41,16.59L13.82,12l4.59,-4.59L17,6l-6,6l6,6z M12.41,16.59L7.82,12l4.59,-4.59L11,6l-6,6l6,6z"/>
+</vector>
