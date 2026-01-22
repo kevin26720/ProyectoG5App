@@ -17,7 +17,7 @@
     <!-- Added for Login Screen -->
     <color name="login_header_background">#EBDD97</color>
     <color name="login_background">#B8E8E6</color>
-    <color name="login_text_title">#4E342E</color>
+    <color name="login_text_title">#5B3535</color>
     <color name="login_button_secondary">#E6C29F</color>
     <color name="login_input_bg">#FFFFFF</color>
 </resources>
