@@ -28,6 +28,7 @@
     <string name="welcome_player_name_placeholder">Nombre del jugador</string>
     <string name="welcome_btn_new_game">Nueva Partida</string>
     <string name="welcome_btn_settings">Configuraciones</string>
+    <string name="welcome_btn_ranking">Ranking</string>
     <string name="welcome_footer_text">Elige los filtros de colores que más\nte gusten y más</string>
 
     <!-- Strings for Pantalla Elegir Continente -->

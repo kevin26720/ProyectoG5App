@@ -1,14 +1,9 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp"
-    android:height="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24"
-    android:tint="@color/inicio_button_stroke">
+    android:width="32dp"
+    android:height="30dp"
+    android:viewportWidth="32"
+    android:viewportHeight="30">
   <path
-      android:fillColor="@color/inicio_button_stroke"
-      android:pathData="M15.5,5l-1.41,1.41L18.17,11H2v2h16.17l-4.09,4.59L15.5,19l7,-7z"/>
-  <!-- Adjusted to look more like double arrow >> -->
-  <path
-      android:fillColor="@color/inicio_button_stroke"
-      android:pathData="M5.59,7.41L10.18,12l-4.59,4.59L7,18l6,-6l-6,-6z M11.59,7.41L16.18,12l-4.59,4.59L13,18l6,-6l-6,-6z"/>
+      android:pathData="M26.107,13.988L16.774,7.738C16.575,7.603 16.34,7.523 16.096,7.506C15.852,7.488 15.608,7.535 15.39,7.639C15.172,7.744 14.989,7.903 14.861,8.099C14.734,8.295 14.667,8.52 14.667,8.75L14.667,12.575L7.44,7.738C7.242,7.603 7.007,7.523 6.763,7.506C6.519,7.488 6.274,7.535 6.056,7.639C5.838,7.744 5.656,7.903 5.528,8.099C5.401,8.295 5.333,8.52 5.333,8.75L5.333,21.25C5.333,21.712 5.614,22.15 6.054,22.362C6.24,22.45 6.453,22.5 6.667,22.5C6.933,22.5 7.214,22.425 7.44,22.263L14.667,17.425L14.667,21.25C14.667,21.712 14.947,22.15 15.387,22.362C15.573,22.45 15.787,22.5 16,22.5C16.267,22.5 16.547,22.425 16.774,22.263L26.107,16.013C26.454,15.775 26.667,15.4 26.667,15C26.667,14.6 26.454,14.212 26.107,13.988ZM8,18.825L8,11.188L13.707,15.012L8,18.837L8,18.825ZM17.333,18.825L17.333,11.188L23.04,15.012L17.333,18.837L17.333,18.825Z"
+      android:fillColor="#5B3535"/>
 </vector>
