@@ -12,6 +12,7 @@ class BienvenidaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_bienvenida)
 
         val btnNewGame = findViewById<Button>(R.id.btnNewGame)
+        val btnSettings = findViewById<Button>(R.id.btnSettings)
         val tvPlayerName = findViewById<TextView>(R.id.tvPlayerName)
         
         // Recuperar el correo del usuario desde el Intent
@@ -22,6 +23,11 @@ class BienvenidaActivity : AppCompatActivity() {
 
         btnNewGame.setOnClickListener {
             val intent = Intent(this, ElegirContinenteActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnSettings.setOnClickListener {
+            val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
         }
     }
