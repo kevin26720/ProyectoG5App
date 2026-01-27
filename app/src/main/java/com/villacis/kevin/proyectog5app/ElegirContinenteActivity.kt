@@ -12,14 +12,35 @@ class ElegirContinenteActivity : AppCompatActivity() {
 
         val btnBack = findViewById<Button>(R.id.btnBack)
         btnBack.setOnClickListener {
-            finish() // Regresa a la actividad anterior (Bienvenida)
+            finish()
         }
         
-        // Lógica para ir al juego de Sudamérica
-        val btnSouthAmerica = findViewById<Button>(R.id.btnSouthAmerica)
-        btnSouthAmerica.setOnClickListener {
-             val intent = Intent(this, GameSudamericaActivity::class.java)
-             startActivity(intent)
+        findViewById<Button>(R.id.btnNorthAmerica).setOnClickListener {
+            startActivity(Intent(this, GameNorthAmericaActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.btnCentralAmerica).setOnClickListener {
+            startActivity(Intent(this, GameCentralAmericaActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.btnSouthAmerica).setOnClickListener {
+            startActivity(Intent(this, GameSudamericaActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.btnEurope).setOnClickListener {
+            startActivity(Intent(this, GameEuropeActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.btnAsia).setOnClickListener {
+            startActivity(Intent(this, GameAsiaActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.btnOceania).setOnClickListener {
+            startActivity(Intent(this, GameOceaniaActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.btnAfrica).setOnClickListener {
+            startActivity(Intent(this, GameAfricaActivity::class.java))
         }
     }
 }

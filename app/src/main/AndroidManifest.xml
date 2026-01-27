@@ -45,6 +45,30 @@
             android:name=".GameSudamericaActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".GameNorthAmericaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".GameCentralAmericaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".GameEuropeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".GameAsiaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".GameOceaniaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".GameAfricaActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
