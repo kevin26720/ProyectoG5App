@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/inicio_background"
-    tools:context=".GameNorthAmericaActivity">
+    tools:context=".GameCentralAmericaActivity">
 
     <!-- Header/Logo -->
     <ImageView
@@ -81,7 +81,7 @@
             android:padding="16dp"
             android:src="@drawable/logo_sin_fondo"
             android:scaleType="fitCenter"
-            android:contentDescription="Mapa de Norteamérica" />
+            android:contentDescription="Mapa de Centroamérica" />
     </androidx.cardview.widget.CardView>
 
     <!-- Flags Carousel -->
@@ -113,7 +113,7 @@
                 android:orientation="horizontal"
                 android:gravity="center_vertical">
 
-                <!-- USA -->
+                <!-- Guatemala -->
                 <LinearLayout
                     android:id="@+id/flagItem1"
                     android:layout_width="wrap_content"
@@ -124,17 +124,17 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/estados_unidos"
+                        android:src="@drawable/guatemala"
                         android:scaleType="fitXY"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="USA"
+                        android:text="Guatemala"
                         android:textColor="@color/inicio_text_color"
                         android:textSize="12sp"/>
                 </LinearLayout>
 
-                <!-- Canada -->
+                <!-- Belice -->
                 <LinearLayout
                     android:id="@+id/flagItem2"
                     android:layout_width="wrap_content"
@@ -145,103 +145,19 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/canada"
+                        android:src="@drawable/belice"
                         android:scaleType="fitXY"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Canadá"
-                        android:textColor="@color/inicio_text_color"
-                        android:textSize="12sp"/>
-                </LinearLayout>
-
-                <!-- Mexico -->
-                <LinearLayout
-                    android:id="@+id/flagItem3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginEnd="16dp">
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/mexico"
-                        android:scaleType="fitXY"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="México"
-                        android:textColor="@color/inicio_text_color"
-                        android:textSize="12sp"/>
-                </LinearLayout>
-
-                <!-- Nicaragua -->
-                <LinearLayout
-                    android:id="@+id/flagItem4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginEnd="16dp">
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/nicaragua"
-                        android:scaleType="fitXY"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Nicaragua"
-                        android:textColor="@color/inicio_text_color"
-                        android:textSize="12sp"/>
-                </LinearLayout>
-
-                <!-- Puerto Rico -->
-                <LinearLayout
-                    android:id="@+id/flagItem5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginEnd="16dp">
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/puerto_rico"
-                        android:scaleType="fitXY"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Puerto Rico"
-                        android:textColor="@color/inicio_text_color"
-                        android:textSize="12sp"/>
-                </LinearLayout>
-
-                <!-- Jamaica -->
-                <LinearLayout
-                    android:id="@+id/flagItem6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginEnd="16dp">
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/jamaica"
-                        android:scaleType="fitXY"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Jamaica"
+                        android:text="Belice"
                         android:textColor="@color/inicio_text_color"
                         android:textSize="12sp"/>
                 </LinearLayout>
 
                 <!-- Honduras -->
                 <LinearLayout
-                    android:id="@+id/flagItem7"
+                    android:id="@+id/flagItem3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -260,85 +176,9 @@
                         android:textSize="12sp"/>
                 </LinearLayout>
 
-                <!-- Haiti -->
+                <!-- El Salvador -->
                 <LinearLayout
-                    android:id="@+id/flagItem8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginEnd="16dp">
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/haiti"
-                        android:scaleType="fitXY"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Haití"
-                        android:textColor="@color/inicio_text_color"
-                        android:textSize="12sp"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/flagItem9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginEnd="16dp">
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/guatemala"
-                        android:scaleType="fitXY"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Guatemala"
-                        android:textColor="@color/inicio_text_color"
-                        android:textSize="12sp"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/flagItem10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginEnd="16dp">
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/belice"
-                        android:scaleType="fitXY"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Belice"
-                        android:textColor="@color/inicio_text_color"
-                        android:textSize="12sp"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/flagItem11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginEnd="16dp">
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/panama"
-                        android:scaleType="fitXY"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Panama"
-                        android:textColor="@color/inicio_text_color"
-                        android:textSize="12sp"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/flagItem12"
+                    android:id="@+id/flagItem4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
@@ -356,12 +196,36 @@
                         android:textColor="@color/inicio_text_color"
                         android:textSize="12sp"/>
                 </LinearLayout>
+
+                <!-- Nicaragua -->
                 <LinearLayout
-                    android:id="@+id/flagItem13"
+                    android:id="@+id/flagItem5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/nicaragua"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nicaragua"
+                        android:textColor="@color/inicio_text_color"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <!-- Costa Rica -->
+                <LinearLayout
+                    android:id="@+id/flagItem6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp">
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="40dp"
@@ -371,6 +235,26 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Costa Rica"
+                        android:textColor="@color/inicio_text_color"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <!-- Panama -->
+                <LinearLayout
+                    android:id="@+id/flagItem7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/panama"
+                        android:scaleType="fitXY"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Panamá"
                         android:textColor="@color/inicio_text_color"
                         android:textSize="12sp"/>
                 </LinearLayout>
