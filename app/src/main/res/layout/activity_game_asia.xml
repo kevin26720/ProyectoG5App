@@ -74,13 +74,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnClose">
 
-        <ImageView
+        <com.villacis.kevin.proyectog5app.InteractiveMapView
             android:id="@+id/ivMap"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="16dp"
-            android:scaleType="fitCenter"
-            android:contentDescription="Mapa de Asia" />
+            android:src="@drawable/asia"
+            />
     </androidx.cardview.widget.CardView>
 
     <!-- Flags Carousel -->
@@ -193,7 +193,6 @@
                         android:textSize="12sp"/>
                 </LinearLayout>
 
-                <!-- Burkina Faso -->
                 <LinearLayout
                     android:id="@+id/flagItem5"
                     android:layout_width="wrap_content"
@@ -234,25 +233,6 @@
                         android:textSize="12sp"/>
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/flagItem7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginEnd="16dp">
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/rusia"
-                        android:scaleType="fitXY"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Rusia"
-                        android:textColor="@color/inicio_text_color"
-                        android:textSize="12sp"/>
-                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/flagItem8"
