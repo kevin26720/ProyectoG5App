@@ -42,7 +42,7 @@
             android:exported="false" />
             
         <activity
-            android:name=".GameSudamericaActivity"
+            android:name=".GameAmericaSurActivity"
             android:exported="false" />
 
         <activity
