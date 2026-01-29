@@ -74,14 +74,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnClose">
 
-<!--        <ImageView-->
-<!--            android:id="@+id/ivMap"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:padding="16dp"-->
-<!--            android:src="@drawable/africa"-->
-<!--            android:scaleType="fitCenter"-->
-<!--            android:contentDescription="Mapa de África" />-->
+        <!--        <ImageView-->
+        <!--            android:id="@+id/ivMap"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:padding="16dp"-->
+        <!--            android:src="@drawable/africa"-->
+        <!--            android:scaleType="fitCenter"-->
+        <!--            android:contentDescription="Mapa de África" />-->
         <com.villacis.kevin.proyectog5app.InteractiveMapView
             android:id="@+id/ivMap"
             android:layout_width="match_parent"
@@ -246,6 +246,7 @@
                         android:textSize="12sp"/>
                 </LinearLayout>
 
+                <!-- Cabo Verde -->
                 <LinearLayout
                     android:id="@+id/flagItem7"
                     android:layout_width="wrap_content"
@@ -266,6 +267,7 @@
                         android:textSize="12sp"/>
                 </LinearLayout>
 
+                <!-- Camerum -->
                 <LinearLayout
                     android:id="@+id/flagItem8"
                     android:layout_width="wrap_content"
@@ -286,6 +288,7 @@
                         android:textSize="12sp"/>
                 </LinearLayout>
 
+                <!-- Chad -->
                 <LinearLayout
                     android:id="@+id/flagItem9"
                     android:layout_width="wrap_content"
@@ -306,6 +309,7 @@
                         android:textSize="12sp"/>
                 </LinearLayout>
 
+                <!-- Comoras -->
                 <LinearLayout
                     android:id="@+id/flagItem10"
                     android:layout_width="wrap_content"
@@ -326,6 +330,7 @@
                         android:textSize="12sp"/>
                 </LinearLayout>
 
+                <!-- Costa de marfil -->
                 <LinearLayout
                     android:id="@+id/flagItem11"
                     android:layout_width="wrap_content"
@@ -346,6 +351,7 @@
                         android:textSize="12sp"/>
                 </LinearLayout>
 
+                <!-- Egipto -->
                 <LinearLayout
                     android:id="@+id/flagItem12"
                     android:layout_width="wrap_content"
@@ -366,6 +372,7 @@
                         android:textSize="12sp"/>
                 </LinearLayout>
 
+                <!-- Eritrea -->
                 <LinearLayout
                     android:id="@+id/flagItem13"
                     android:layout_width="wrap_content"
@@ -386,6 +393,7 @@
                         android:textSize="12sp"/>
                 </LinearLayout>
 
+                <!-- Etiopia -->
                 <LinearLayout
                     android:id="@+id/flagItem14"
                     android:layout_width="wrap_content"
@@ -406,6 +414,7 @@
                         android:textSize="12sp"/>
                 </LinearLayout>
 
+                <!-- Gambia -->
                 <LinearLayout
                     android:id="@+id/flagItem15"
                     android:layout_width="wrap_content"

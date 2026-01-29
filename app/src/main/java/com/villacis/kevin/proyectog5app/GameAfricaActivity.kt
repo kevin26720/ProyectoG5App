@@ -24,7 +24,17 @@ class GameAfricaActivity : AppCompatActivity() {
 
         configurarBandera(R.id.flagItem1, "angola", R.drawable.angola)
         configurarBandera(R.id.flagItem9, "chad", R.drawable.chad)
-
+        configurarBandera(R.id.flagItem6, "burundi", R.drawable.burundi)
+        configurarBandera(R.id.flagItem3, "argelia", R.drawable.argelia)
+        configurarBandera(R.id.flagItem2, "benin", R.drawable.benin)
+        configurarBandera(R.id.flagItem4, "botswana", R.drawable.botswana)
+        configurarBandera(R.id.flagItem5, "burkina_faso", R.drawable.burkina_faso)
+        configurarBandera(R.id.flagItem8, "camerun", R.drawable.camerun)
+        configurarBandera(R.id.flagItem11, "costa_de_marfil", R.drawable.costa_de_marfil)
+        configurarBandera(R.id.flagItem12, "egipto", R.drawable.egipto)
+        configurarBandera(R.id.flagItem13, "eritrea", R.drawable.eritrea)
+        configurarBandera(R.id.flagItem14, "etiopia", R.drawable.etiopia)
+        configurarBandera(R.id.flagItem15, "gambia", R.drawable.gambia)
 
         // 3. Configurar el SOLTAR (Drop) en el Mapa
         interactiveMap.setOnDragListener { v, event ->
