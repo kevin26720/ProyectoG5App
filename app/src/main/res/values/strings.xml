@@ -20,6 +20,7 @@
     <string name="register_title">REGISTRARSE</string>
     <string name="register_username_label">Introduzca su nombre de usuario</string>
     <string name="register_password_label">Introduzca una contraseña</string>
+    <string name="register_confirm_password_label">Confirme su contraseña</string>
     <string name="register_btn_save">Guardar</string>
     <string name="register_btn_back">Regresar</string>
 
