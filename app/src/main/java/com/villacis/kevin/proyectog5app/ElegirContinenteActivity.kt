@@ -24,7 +24,7 @@ class ElegirContinenteActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.btnSouthAmerica).setOnClickListener {
-            startActivity(Intent(this, GameSudamericaActivity::class.java))
+            startActivity(Intent(this, GameAmericaSurActivity::class.java))
         }
 
         findViewById<Button>(R.id.btnEurope).setOnClickListener {
