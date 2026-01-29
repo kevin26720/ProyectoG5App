@@ -2,18 +2,25 @@ package com.villacis.kevin.proyectog5app
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
-import android.os.Handler
-import android.os.Looper
+import com.google.firebase.auth.FirebaseAuth
+
 
 class LoginActivity : AppCompatActivity() {
+
+    private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        // Initialize Firebase Auth
+        auth = FirebaseAuth.getInstance()
 
         val btnContinue = findViewById<Button>(R.id.btnContinue)
         val etUsername = findViewById<EditText>(R.id.etUsername)
@@ -58,16 +65,22 @@ class LoginActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            // Login successful
-            Snackbar.make(findViewById(android.R.id.content), "Inicio de sesión correcto", Snackbar.LENGTH_SHORT).show()
-            
-            // Navegar a BienvenidaActivity con un pequeño retraso
-            Handler(Looper.getMainLooper()).postDelayed({
-                val intent = Intent(this, BienvenidaActivity::class.java)
-                intent.putExtra("USER_EMAIL", email)
-                startActivity(intent)
-                finish()
-            }, 1000)
+            // --- Autenticación con Firebase ---
+            auth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
+                        // Sign in success, navigate to BienvenidaActivity
+                        Log.d("FIREBASE_AUTH", "signInWithEmail:success")
+                        val intent = Intent(this, BienvenidaActivity::class.java)
+                        intent.putExtra("USER_EMAIL", auth.currentUser?.email)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        // If sign in fails, display a message to the user.
+                        Log.w("FIREBASE_AUTH", "signInWithEmail:failure", task.exception)
+                        Snackbar.make(findViewById(android.R.id.content), "Error de autenticación: Usuario o contraseña incorrectos.", Snackbar.LENGTH_LONG).show()
+                    }
+                }
         }
 
         btnRegister.setOnClickListener {
