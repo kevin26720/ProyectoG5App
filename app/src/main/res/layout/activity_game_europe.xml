@@ -74,13 +74,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnClose">
 
-        <ImageView
+        <com.villacis.kevin.proyectog5app.InteractiveMapView
             android:id="@+id/ivMap"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="16dp"
-            android:scaleType="fitCenter"
-            android:contentDescription="Mapa de Europa" />
+            android:src="@drawable/europa"
+            />
     </androidx.cardview.widget.CardView>
 
     <!-- Flags Carousel -->
