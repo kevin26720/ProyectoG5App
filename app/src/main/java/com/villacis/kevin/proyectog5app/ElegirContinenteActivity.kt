@@ -16,11 +16,7 @@ class ElegirContinenteActivity : AppCompatActivity() {
         }
         
         findViewById<Button>(R.id.btnNorthAmerica).setOnClickListener {
-            startActivity(Intent(this, GameNorthAmericaActivity::class.java))
-        }
-
-        findViewById<Button>(R.id.btnCentralAmerica).setOnClickListener {
-            startActivity(Intent(this, GameCentralAmericaActivity::class.java))
+            startActivity(Intent(this, GameAmericaNorteActivity::class.java))
         }
 
         findViewById<Button>(R.id.btnSouthAmerica).setOnClickListener {

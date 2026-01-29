@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/inicio_background"
-    tools:context=".InicioActivity">
+    tools:context=".StartActivity">
 
     <View
         android:id="@+id/viewHeaderBg"
